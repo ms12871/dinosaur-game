@@ -54,12 +54,8 @@ function speak(text) {
 
   window.speechSynthesis.cancel();
   const utterance = new SpeechSynthesisUtterance(text);
-  const voices = window.speechSynthesis.getVoices();
-  utterance.voice = voices.find((voice) => voice.lang.startsWith("en") && /bubbles/i.test(voice.name))
-    ?? voices.find((voice) => voice.default && voice.lang.startsWith("en"))
-    ?? null;
-  utterance.rate = 0.94;
-  utterance.pitch = 1.5;
+  utterance.rate = 0.88;
+  utterance.pitch = 1.18;
   window.speechSynthesis.speak(utterance);
 }
 

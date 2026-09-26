@@ -17,7 +17,7 @@ Select **Try Dino Learning** to play three more activities:
 - **Count the Eggs:** Count up to five eggs and choose the matching number. There is no score, and you can try again at any time.
 - **Choose the Story:** Pick what the dinosaurs do next to guide a short, friendly story.
 
-The selected dinosaur wiggles and its activity appears on screen. In Explore and Dance, each dinosaur greets you, makes a playful call, and shares an activity or dance prompt with a cheer. Use **Voice on/off** to mute or restore speech; the control is available on both pages. The repeat button in Explore replays its selected activity. Speech prefers the playful English “Bubbles” voice when installed and otherwise uses the device's default English voice with a brighter pitch. Available voices vary by device.
+The selected dinosaur wiggles and its activity appears on screen. In Explore and Dance, each dinosaur greets you, makes a playful call, and shares an activity or dance prompt with a cheer. Use **Voice on/off** to mute or restore speech; the control is available on both pages. The repeat button in Explore replays its selected activity. Speech uses the browser's default voice and may sound different across devices.
 
 ## Dinosaur Activities
 
