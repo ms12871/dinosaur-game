@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f2d7">
+  <title>Dino Roar &amp; Explore!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <main class="game" aria-labelledby="game-title">
+    <header class="topbar">
+      <a class="wordmark" href="#" aria-label="Dino Roar and Explore home">
+        <span class="wordmark-icon" aria-hidden="true">✦</span>
+        <span>ROAR &amp; EXPLORE</span>
+      </a>
+      <button class="sound-toggle" type="button" aria-pressed="true" aria-label="Turn voice off">
+        <span class="sound-icon" aria-hidden="true">♫</span>
+        <span class="sound-label">Voice on</span>
+      </button>
+    </header>
+
+    <section class="intro" aria-labelledby="game-title">
+      <p class="eyebrow"><span aria-hidden="true">☀</span> A LITTLE PREHISTORIC PLAYTIME</p>
+      <h1 id="game-title">Dino Roar <span>&amp;</span> Explore!</h1>
+      <p class="subtitle">Who will you meet today?</p>
+    </section>
+
+    <section class="dino-grid" aria-label="Choose a dinosaur">
+      <button class="dino-card dino-trex" type="button" data-dino="trex" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦖</span>
+        <span class="dino-name">T-Rex</span>
+        <span class="dino-hint">BIG STOMPS</span>
+      </button>
+      <button class="dino-card dino-trike" type="button" data-dino="triceratops" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦕</span>
+        <span class="dino-name">Triceratops</span>
+        <span class="dino-hint">HORN SHAKE</span>
+      </button>
+      <button class="dino-card dino-ptera" type="button" data-dino="pterodactyl" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦅</span>
+        <span class="dino-name">Pterodactyl</span>
+        <span class="dino-hint">FLAP &amp; FLY</span>
+      </button>
+      <button class="dino-card dino-brachio" type="button" data-dino="brachiosaurus" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦕</span>
+        <span class="dino-name">Brachiosaurus</span>
+        <span class="dino-hint">REACH UP HIGH</span>
+      </button>
+      <button class="dino-card dino-stego" type="button" data-dino="stegosaurus" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦕</span>
+        <span class="dino-name">Stegosaurus</span>
+        <span class="dino-hint">TAIL WIGGLE</span>
+      </button>
+    </section>
+
+    <section class="activity" aria-live="polite" aria-atomic="true" aria-label="Dinosaur activity">
+      <div class="activity-mark" aria-hidden="true"><span>?</span></div>
+      <div class="activity-copy">
+        <p class="activity-kicker" id="activity-kicker">YOUR DINO ADVENTURE</p>
+        <h2 id="announcement">Pick a dino pal!</h2>
+        <p id="activity-text">A fun little move is waiting for you.</p>
+      </div>
+      <button class="repeat-button" type="button" aria-label="Repeat activity" disabled>
+        <span aria-hidden="true">↻</span>
+      </button>
+    </section>
+
+    <footer class="footer"><span aria-hidden="true">✿</span> BIG MOVES, LITTLE DINO <span aria-hidden="true">✿</span></footer>
+  </main>
+</body>
+</html>
