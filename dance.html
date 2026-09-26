@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f2d7">
+  <title>Dino Dance Party!</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="dance.js" defer></script>
+</head>
+<body class="dance-page">
+  <main class="game" aria-labelledby="dance-title">
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Dino Roar and Explore home">
+        <span class="wordmark-icon" aria-hidden="true">✦</span>
+        <span>ROAR &amp; EXPLORE</span>
+      </a>
+      <a class="dance-back" href="index.html">← Back to Explore</a>
+    </header>
+
+    <section class="intro" aria-labelledby="dance-title">
+      <p class="eyebrow"><span aria-hidden="true">♫</span> PREHISTORIC DANCE PARTY</p>
+      <h1 id="dance-title">Dino Dance <span>Party!</span></h1>
+      <p class="subtitle">Pick your dance star!</p>
+      <a class="dance-page-link" href="learn.html">Try Dino Learning <span aria-hidden="true">→</span></a>
+    </section>
+
+    <section class="dance-stage" aria-live="polite" aria-atomic="true" aria-label="Dinosaur dance stage">
+      <span class="dance-stage-art" id="dance-stage-art" aria-hidden="true">🦖</span>
+      <div class="dance-stage-copy">
+        <p class="dance-stage-label">ON THE DANCE FLOOR</p>
+        <h2 id="dance-name">Ready to dance?</h2>
+        <p id="dance-message">Tap a dino to make them groove!</p>
+      </div>
+    </section>
+
+    <section class="dino-grid" aria-label="Choose a dinosaur to dance">
+      <button class="dino-card dino-trex" type="button" data-dino="trex" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦖</span>
+        <span class="dino-name">T-Rex</span>
+        <span class="dino-hint">STOMP DANCE</span>
+      </button>
+      <button class="dino-card dino-trike" type="button" data-dino="triceratops" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦕</span>
+        <span class="dino-name">Triceratops</span>
+        <span class="dino-hint">HORN SHAKE</span>
+      </button>
+      <button class="dino-card dino-ptera" type="button" data-dino="pterodactyl" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦅</span>
+        <span class="dino-name">Pterodactyl</span>
+        <span class="dino-hint">WING FLAP</span>
+      </button>
+      <button class="dino-card dino-brachio" type="button" data-dino="brachiosaurus" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦕</span>
+        <span class="dino-name">Brachiosaurus</span>
+        <span class="dino-hint">REACH &amp; SWAY</span>
+      </button>
+      <button class="dino-card dino-stego" type="button" data-dino="stegosaurus" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦕</span>
+        <span class="dino-name">Stegosaurus</span>
+        <span class="dino-hint">TAIL WIGGLE</span>
+      </button>
+      <button class="dino-card dino-ankylo" type="button" data-dino="ankylosaurus" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦕</span>
+        <span class="dino-name">Ankylosaurus</span>
+        <span class="dino-hint">SHELL SHAKE</span>
+      </button>
+      <button class="dino-card dino-spino" type="button" data-dino="spinosaurus" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦖</span>
+        <span class="dino-name">Spinosaurus</span>
+        <span class="dino-hint">SPIN &amp; GROOVE</span>
+      </button>
+      <button class="dino-card dino-raptor" type="button" data-dino="velociraptor" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦖</span>
+        <span class="dino-name">Velociraptor</span>
+        <span class="dino-hint">QUICK FEET</span>
+      </button>
+      <button class="dino-card dino-parasauro" type="button" data-dino="parasaurolophus" aria-pressed="false">
+        <span class="dino-art" aria-hidden="true">🦕</span>
+        <span class="dino-name">Parasaurolophus</span>
+        <span class="dino-hint">HEAD BOB</span>
+      </button>
+    </section>
+
+    <footer class="footer"><span aria-hidden="true">✿</span> EVERY DINO HAS A DANCE <span aria-hidden="true">✿</span></footer>
+  </main>
+</body>
+</html>

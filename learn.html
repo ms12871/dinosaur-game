@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f2d7">
+  <title>Dino Learning Games</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="learn.js" defer></script>
+</head>
+<body class="learning-page">
+  <main class="game" aria-labelledby="learning-title">
+    <header class="topbar">
+      <a class="wordmark" href="index.html" aria-label="Dino Roar and Explore home">
+        <span class="wordmark-icon" aria-hidden="true">✦</span>
+        <span>ROAR &amp; EXPLORE</span>
+      </a>
+      <a class="dance-back" href="index.html">← Back to Dino Game</a>
+    </header>
+
+    <section class="intro" aria-labelledby="learning-title">
+      <p class="eyebrow"><span aria-hidden="true">✦</span> LITTLE DINO LEARNING</p>
+      <h1 id="learning-title">Play &amp; <span>Learn!</span></h1>
+      <p class="subtitle">Listen, count, and make a story.</p>
+    </section>
+
+    <div class="learning-tabs" role="tablist" aria-label="Choose a learning game">
+      <button class="learning-tab" id="tab-sound" type="button" role="tab" aria-selected="true" aria-controls="panel-sound" tabindex="0">Dino Sounds</button>
+      <button class="learning-tab" id="tab-count" type="button" role="tab" aria-selected="false" aria-controls="panel-count" tabindex="-1">Count Eggs</button>
+      <button class="learning-tab" id="tab-story" type="button" role="tab" aria-selected="false" aria-controls="panel-story" tabindex="-1">Story Time</button>
+    </div>
+
+    <section class="learning-panel" id="panel-sound" role="tabpanel" aria-labelledby="tab-sound">
+      <div class="learning-copy">
+        <p class="activity-kicker">LISTEN &amp; MATCH</p>
+        <h2>Which dinosaur made that sound?</h2>
+        <p>Listen carefully, then tap your dino.</p>
+      </div>
+      <div class="learning-actions">
+        <button class="learning-action" id="play-sound" type="button"><span aria-hidden="true">♫</span> Listen for a dino</button>
+        <button class="learning-action secondary" id="replay-sound" type="button" disabled><span aria-hidden="true">↻</span> Hear it again</button>
+        <button class="learning-action secondary" id="next-sound" type="button" disabled>Another sound <span aria-hidden="true">→</span></button>
+      </div>
+      <p class="mode-feedback" id="sound-feedback" role="status" aria-live="polite">Press “Listen for a dino” to begin.</p>
+      <div class="dino-grid sound-choices" role="group" aria-label="Choose the dinosaur that made the sound">
+        <button class="dino-card dino-trex" type="button" data-sound-dino="trex" aria-pressed="false">
+          <span class="dino-art" aria-hidden="true">🦖</span><span class="dino-name">T-Rex</span><span class="dino-hint">ROAR</span>
+        </button>
+        <button class="dino-card dino-trike" type="button" data-sound-dino="triceratops" aria-pressed="false">
+          <span class="dino-art" aria-hidden="true">🦕</span><span class="dino-name">Triceratops</span><span class="dino-hint">TRUMPET</span>
+        </button>
+        <button class="dino-card dino-ptera" type="button" data-sound-dino="pterodactyl" aria-pressed="false">
+          <span class="dino-art" aria-hidden="true">🦅</span><span class="dino-name">Pterodactyl</span><span class="dino-hint">CHIRP</span>
+        </button>
+        <button class="dino-card dino-brachio" type="button" data-sound-dino="brachiosaurus" aria-pressed="false">
+          <span class="dino-art" aria-hidden="true">🦕</span><span class="dino-name">Brachiosaurus</span><span class="dino-hint">BELLOW</span>
+        </button>
+        <button class="dino-card dino-stego" type="button" data-sound-dino="stegosaurus" aria-pressed="false">
+          <span class="dino-art" aria-hidden="true">🦕</span><span class="dino-name">Stegosaurus</span><span class="dino-hint">RATTLE</span>
+        </button>
+      </div>
+    </section>
+
+    <section class="learning-panel" id="panel-count" role="tabpanel" aria-labelledby="tab-count" hidden>
+      <div class="learning-copy">
+        <p class="activity-kicker">COUNT TO FIVE</p>
+        <h2>How many eggs do you see?</h2>
+        <p>Count each egg, then tap the number.</p>
+      </div>
+      <div class="egg-display" id="egg-display" role="img" aria-label="Dinosaur eggs"></div>
+      <div class="number-choices" role="group" aria-label="Choose how many eggs">
+        <button class="number-choice" type="button" data-count="1" aria-label="One">1</button>
+        <button class="number-choice" type="button" data-count="2" aria-label="Two">2</button>
+        <button class="number-choice" type="button" data-count="3" aria-label="Three">3</button>
+        <button class="number-choice" type="button" data-count="4" aria-label="Four">4</button>
+        <button class="number-choice" type="button" data-count="5" aria-label="Five">5</button>
+      </div>
+      <p class="mode-feedback" id="count-feedback" role="status" aria-live="polite"></p>
+      <button class="learning-action story-next" id="next-count" type="button" hidden>Next count <span aria-hidden="true">→</span></button>
+    </section>
+
+    <section class="learning-panel" id="panel-story" role="tabpanel" aria-labelledby="tab-story" hidden>
+      <div class="learning-copy">
+        <p class="activity-kicker">A STORY YOU CHOOSE</p>
+        <h2>What should the dinos do?</h2>
+        <p>Pick an idea and see what happens next.</p>
+      </div>
+      <div class="story-scene">
+        <span class="story-art" id="story-art" aria-hidden="true">🦖</span>
+        <h2 id="story-prompt"></h2>
+      </div>
+      <div class="story-choices" id="story-choices" role="group" aria-label="Choose what happens next"></div>
+      <p class="story-response" id="story-response" role="status" aria-live="polite"></p>
+      <button class="learning-action story-next" id="story-next" type="button" hidden>Next part <span aria-hidden="true">→</span></button>
+    </section>
+
+    <footer class="footer"><span aria-hidden="true">✿</span> PLAY A LITTLE, LEARN A LOT <span aria-hidden="true">✿</span></footer>
+  </main>
+</body>
+</html>
